@@ -1,5 +1,7 @@
 ## Build Eleventy (11ty)
 
+![](IdthKOzqFA-350.avif)
+
 This action fetches all dependencies via **npm install** which are specified in your **.eleventy.js** and builds then the website.
 
 No docker is used. No root-permissions needed on your self-hosted runner
