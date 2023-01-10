@@ -12,7 +12,7 @@ No docker is used. No root-permissions needed on your self-hosted runner
 ### Features
 - this action runs flawless without root-permissions as docker is not used.
 - you can use most common plugins, i.e. **@11ty/eleventy-img** which ist not possible with docker-gh-actions.
-- You can pass custom args to the eleventy-command´
+- You can pass custom args to the eleventy-command
 
 ### Example-Workflow
 
