@@ -1,0 +1,12 @@
+name: 'Install & build'
+description: 'Installs and builds 11ty'
+author: 'extrawitz'
+inputs: 
+  args:
+   description: 'arguments to be used, when running "eleventy"'
+   required: false
+runs:
+  using: "composite"
+  steps:
+  - run: build.sh
+    shell: bash
