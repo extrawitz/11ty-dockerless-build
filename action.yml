@@ -1,5 +1,5 @@
-name: 'Install & build Eleventy (11ty)'
-description: 'Installs and builds 11ty'
+name: 'Build Eleventy (11ty)'
+description: 'Installs and builds 11ty without docker or root permissions'
 author: 'extrawitz'
 inputs: 
   args:
