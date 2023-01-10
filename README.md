@@ -7,7 +7,7 @@ No docker is used. No root-permissions needed on your self-hosted runner
 ### Features
 - this action runs flawless without root-permissions as docker is not used.
 - you can use most common plugins, i.e. **@11ty/eleventy-img** which ist not possible with docker-gh-actions.
-- You can pass custom args to the eleventy-command
+- You can pass custom args to the eleventy-command´
 
 ### Example-Workflow
 
@@ -29,3 +29,31 @@ jobs:
 	  publish_branch: website
 	  github_token: ${{ secrets.PSA }}
 ```
+
+#### Use your custom args when building website with "eleventy"
+
+To use your custom arguments, specify them in your workflow like in below example:
+
+```
+name: 11ty build
+on: [push]
+jobs:
+  build_deploy:
+   runs-on: self-hosted
+   steps:
+   - name: Checkout last commit of repository
+	 uses: actions/checkout@v3
+   - name: Install 11ty and build website
+	 uses: extrawitz/11ty-dockerless-build@v1
+	 with:
+	  args: --formats=md,html,ejs
+   - name: Deploy
+	 uses: peaceiris/actions-gh-pages@v3
+	 with:
+	  publish_dir: public
+	  publish_branch: website
+	  github_token: ${{ secrets.PSA }}
+```
+
+See more details about this in eleventy-doc
+https://www.11ty.dev/docs/usage/
