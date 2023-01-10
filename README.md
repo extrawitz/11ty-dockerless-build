@@ -4,15 +4,16 @@ This action fetches all dependencies via **npm install** which are specified in 
 
 No docker is used. No root-permissions needed on your self-hosted runner
 
-### Pre-Requisites
-- your site has to run smoothly on your local machine.
-- You need a proper ".eleventy.js" file https://www.11ty.dev/docs/config/
-- You need to have a **valid local package.json** in your repo, so that **npm** / **npx** works clean.
-
 ### Features
 - this action runs flawless without root-permissions as docker is not used.
 - you can use most common plugins, i.e. **@11ty/eleventy-img** which ist not possible with docker-gh-actions.
 - You can pass custom args to the eleventy-command
+
+### Pre-Requisites
+- your site has to run smoothly on your local machine.
+- You need a proper ".eleventy.js" file https://www.11ty.dev/docs/config/
+- You will need proper passthrough config i.e. for your assets-folder https://www.11ty.dev/docs/copy/
+- You need to have a **valid local package.json** in your repo, so that **npm** / **npx** works clean.
 
 ### Example-Workflow
 
