@@ -63,3 +63,23 @@ jobs:
 
 See more details about this in eleventy-doc
 https://www.11ty.dev/docs/usage/
+
+### Pro-Tipp to keep your main-branch clean when working with Eleventy
+
+You can exclude your public-folder from excludes wih adding a entry for the public folder into your .git/info/exclude file
+
+#### Example
+```
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+public/*
+```
+
+More Infos on that here https://git-scm.com/docs/gitignore#_description
+
+PS @ Microsoft - branch specific .gitignores would be alltough nice :-)
