@@ -7,7 +7,7 @@ No docker is used. No root-permissions needed on your self-hosted runner
 ### Pre-Requisites
 - your site has to run smoothly on your local machine.
 - You need a proper ".eleventy.js" file https://www.11ty.dev/docs/config/
-- You need a to have a valid local package.json in your repo, so that **npm** / **npx** works clean.
+- You need to have a **valid local package.json** in your repo, so that **npm** / **npx** works clean.
 
 ### Features
 - this action runs flawless without root-permissions as docker is not used.
