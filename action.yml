@@ -12,5 +12,5 @@ runs:
      run: npm install
      shell: bash
    - name: Build the website
-     run: npm install
+     run: eleventy $INPUT_ARGS
      shell: bash
