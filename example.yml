@@ -1,14 +1,13 @@
-name: Eleventy Build
-description: Build 11ty (dockerless)
+name: 11ty build
 on: [push]
 jobs:
   build_deploy:
-  runs-on: ubuntu-18.04, self-hosted
-  steps:
+   runs-on: ubuntu-18.04, self-hosted
+   steps:
    - name: Checkout last commit of repository
-   - uses: actions/checkout@v3
+     uses: actions/checkout@v3
    - name: Install 11ty and build website
-     uses: extrawitz/11ty-dockerless-build
+     uses: extrawitz/11ty-dockerless-build@v1
    - name: Deploy
      uses: peaceiris/actions-gh-pages@v3
      with:

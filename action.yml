@@ -8,5 +8,9 @@ inputs:
 runs:
   using: "composite"
   steps:
-  - run: build.sh
-    shell: bash
+   - name: Install npm dependencies from .eleventy.js
+     run: npm install
+     shell: bash
+   - name: Build the website
+     run: npm install
+     shell: bash
