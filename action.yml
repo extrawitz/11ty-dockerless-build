@@ -1,4 +1,4 @@
-name: 'Install & build'
+name: 'Install & build Eleventy (11ty)'
 description: 'Installs and builds 11ty'
 author: 'extrawitz'
 inputs: 
