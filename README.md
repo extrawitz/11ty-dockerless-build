@@ -68,7 +68,7 @@ https://www.11ty.dev/docs/usage/
 
 ### Pro-Tipp to keep your main-branch clean when working with Eleventy
 
-You can exclude your public-folder from excludes wih adding a entry for the public folder into your .git/info/exclude file
+You can exclude your public-folder from commits with adding a entry for the public folder into your .git/info/exclude file
 
 #### Example
 ```
